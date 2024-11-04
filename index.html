@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Clima</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="busca_clima.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.13/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+    <div class="div">
+    <h1>Consulta Clima</h1>
+    <label for="estado">Estado:</label>
+    <select id="estado">
+        
+    </select>
+
+    <label for="cidade">Cidade:</label>
+    <select id="cidade">
+        <option value="">Selecione um estado primeiro</option>
+    </select>
+    <br><button id="buscar">Buscar Clima</button><br>
+<br>
+
+    <button id="gerar-pdf">Salvar em PDF</button>
+
+    <h2>Clima</h2>
+    <table id="tabela-clima">
+        <thead>
+            <tr>
+                <th>Horário</th>
+                <th>Condição</th>
+                <th>Temperatura (°C)</th>
+                <th>Sensação (°C)</th>
+                <th>Umidade (%)</th>
+                <th>Vento (Kph)</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table></div>
+</body>
+</html>
